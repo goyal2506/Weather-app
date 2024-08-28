@@ -8,7 +8,7 @@ let  temp_c = document.getElementById("temp_c");
 
 
 async function getData(cityName) {
-    const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=a88485f783ad432198943908242608&q=${cityName}&aqi=yes`);
+    const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=a88485f783ad432198943908242608&q=${cityName}&aqi=yes`);
     return await promise.json();
 }
 
